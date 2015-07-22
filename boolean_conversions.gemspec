@@ -9,18 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Michael Kelly"]
   spec.email         = ["michaelkelly322@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Adds basic boolean conversions for standard ruby objects"
+  spec.description   = "Adds boolean conversions for String, Fixnum, TrueClass, FalseClass, and NilClass to convert common values like 'true', 0, and '0' to boolean values.  Integrates with rails as well."
+  spec.homepage      = "https://github.com/michaelkelly322/boolean_conversions"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
